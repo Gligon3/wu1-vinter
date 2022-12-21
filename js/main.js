@@ -53,10 +53,10 @@ const Particle = function(x, y, color)
     let particle = {};
     particle.x = x;
     particle.y = y;
-    particle.dy = 1 + (Math.random()*3);
-    particle.dx = -1 + (Math.random()*2);
+    particle.dy = 1 + (Math.random()*10);
+    particle.dx = -1 + (Math.random()*10);
     particle.color = SNOW_COLOR;
-    particle.size = 2 + Math.floor(Math.random()*2);
+    particle.size = 2 + Math.floor(Math.random()*5);
     particle.draw = function()
     {
         ctx.beginPath();
